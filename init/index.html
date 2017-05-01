@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Milling</title>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/paraxify.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <script src="js/paraxify.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="//code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+        <script src="js/tilt.jquery.js"></script>
+        <script type="text/javascript">
+            jQuery(document).ready(function(){
+
+                myParaxify = paraxify('.paraxify');
+                new WOW().init();
+                const element = $('.js-tilt').tilt({
+                      maxTilt: 20,
+                      perspective: 300,
+                      easing: 'cubic-bezier(.03,.98,.52,.99)',
+                      scale: '1',
+                      speed: '400',
+                      transition: true,
+                      axis: null,
+                      reset: true,
+                      glare: false,
+                      maxGlare: 1
+                });
+                var filterList = {
+                init: function () {
+                  $('#portfoliolist').mixItUp({
+                    selectors: {
+                      target: '.portfolio',
+                      filter: '.filter' 
+                    },
+                    load: {
+                      filter: '.app'  
+                    }     
+                  });               
+                }
+              };
+              // Run the show!
+              filterList.init();
+            })
+        </script>
+    </head>
+    <body>
+    <section id="home">
+   <header class="cd-auto-hide-header">
+    <div class="logo">
+        <a href="#home">
+        <img src="img/logo2.png" class="img-responsive" alt="Logo">
+        </a>
+    </div>
+
+    <nav class="cd-primary-nav">
+        <a href="#cd-navigation" class="nav-trigger">
+            <span>
+                <em aria-hidden="true"></em>
+                Menu
+            </span>
+        </a> <!-- .nav-trigger -->
+
+        <ul id="cd-navigation">
+            <li><a class="scroll" href="#home">home</a></li>
+            <li><a class="scroll" href="#whatus">quienes somos</a></li>
+            <li><a class="scroll" href="#servicios">serviços</a></li>
+            <li><a class="scroll" href="#gallery-bg">portfolio</a></li>
+            <li><a class="scroll" href="#contact">contactos</a></li>
+        </ul>
+    </nav> <!-- .cd-primary-nav -->
+</header> <!-- .cd-auto-hide-header -->
+<div class="hero-main paraxify">
+    <div class="img-main">
+            <center>
+                 <div class="thim-click-to-bottom">
+                <a href="#whatus" class="scroll">
+                    <i class="fa  fa-chevron-down"></i>
+                </a>
+            </div>
+            </center>
+    </div>
+</div>
+<main>
+    <section id="whatus">
+       <div class="container-main">
+            <h1 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">FVF MILLING</h1>
+        <!--<div class="separator">
+            •
+        </div>-->
+        <hr class="style15 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s" >
+        
+  
+        <br>
+        <br>
+        </div>
+        <div class="container">
+        <div class="content-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+            nasce a Janeiro de 2016, com o propósito de responder às necessidades e exigências da Industria Metalúrgica e Metalomecânica.
+            A sua principal atividade é a prestação de serviços de programação e fresagem, em áreas como os moldes, cunhos e cortantes, aeronáutica, entre outras. 
+
+        </div>
+        <br>
+        <br>  
+        <div class="content-text-2 wow fadeInRight" data-wow-duration="2s" data-wow-delay="1s">
+            Constituída por uma equipa jovem e dinâmica, mas com uma já vasta experiência nos vários setores do mercado, no qual nos propomos a trabalhar.
+            A sua missão é ser um parceiro de excelência, fazendo da competência e viabilidade umas, das muitas, características que a definem.
+
+        </div>
+       </div>
+</section>
+
+<section id="servicios">
+     <div class="container">
+
+        <div class="center-xs">
+            <div class="row">
+              <div class="col-md-4 col-xs-12 col-sm-12 animated bounceInUp wow" data-wow-duration="1s" data-wow-delay="1s">
+                    <a href="/tilt.js" class="c-logo "  >
+                 <span class="backdrop"></span>
+                 <span>Programação
+                       Desbastes
+                      Acabamentos</span>
+              </a>
+              </div>
+               <div class="col-md-4 col-xs-12 col-sm-12 animated bounceInUp wow" data-wow-duration="1s" data-wow-delay="2s">
+                 <a href="/tilt.js" class="c-logo"  >
+                 <span class="backdrop"></span>
+                 <span>Estruturas
+                      Zonas moldantes
+                      Elementos Moveis
+                      Facas e Cunhos</span>
+              </a>
+              </div>
+              <div class="col-md-4 col-xs-12 col-sm-12 animated bounceInUp wow" data-wow-duration="1s" data-wow-delay="3s">
+                  <a href="/tilt.js" class="c-logo "  >
+                 <span class="backdrop"></span>
+                 <span>Mikron VCP 710
+Mas MCV 1000</span>
+              </a>
+              </div>
+               
+          </div>
+        </div>
+ </div>
+         <div class="container">
+           <div class="cel">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia eveniet saepe molestiae fugiat, voluptates odio cupiditate iure delectus doloremque minima culpa laboriosam, maiores dolorum porro, modi excepturi, aperiam rerum enim.
+        </div>
+            <hr  data-wow-duration="2s" data-wow-delay="1s" >
+            <br>
+         </div>
+      
+    
+    
+</section>
+<section id="gallery-bg">   
+<div id="gallery-filter"">
+  
+
+     <ul id="filters" class="clearfix">
+      <li><span class="filter active" data-filter=".app, .card, .icon, .logo, .web">All</span></li>
+      <li><span class="filter" data-filter=".app">App</span></li>
+      <li><span class="filter" data-filter=".card">Card</span></li>
+      <li><span class="filter" data-filter=".icon">Icon</span></li>
+      <li><span class="filter" data-filter=".metal">Metales</span></li>
+      <li><span class="filter" data-filter=".web">Web</span></li>
+    </ul> 
+    
+
+
+
+</div>
+
+<div id="portfoliolist">
+<div class="portfolio card" data-cat="card">
+        <div class="portfolio-wrapper">     
+          <img src="http://bighdwalls.com/wp-content/uploads/winter-sunrise-mountain-hd-wallpaper003.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Typography Company</a>
+              <span class="text-category">Business card</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+        </div>
+        <div class="portfolio card" data-cat="card">
+        <div class="portfolio-wrapper">     
+          <img src="http://bighdwalls.com/wp-content/uploads/winter-sunrise-mountain-hd-wallpaper003.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Typography Company</a>
+              <span class="text-category">Business card</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+        </div>
+        <div class="portfolio icon" data-cat="icon">
+        <div class="portfolio-wrapper">     
+          <img src="http://bighdwalls.com/wp-content/uploads/winter-sunrise-mountain-hd-wallpaper003.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Typography Company</a>
+              <span class="text-category">Business card</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+        </div>
+        <div class="portfolio icon" data-cat="icon">
+        <div class="portfolio-wrapper">     
+          <img src="http://bighdwalls.com/wp-content/uploads/winter-sunrise-mountain-hd-wallpaper003.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Typography Company</a>
+              <span class="text-category">Business card</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+        </div>
+
+  <div class="portfolio card" data-cat="card">
+        <div class="portfolio-wrapper">     
+          <img src="http://bighdwalls.com/wp-content/uploads/winter-sunrise-mountain-hd-wallpaper003.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Typography Company</a>
+              <span class="text-category">Business card</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+        </div>
+
+        <div class="portfolio app" data-cat="app">
+        <div class="portfolio-wrapper">     
+          <img src="https://fscl01.fonpit.de/userfiles/4376948/image/android-app-wallpaper-5-w782.JPG" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Typography Company</a>
+              <span class="text-category">Business card</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+        </div>
+
+        <div class="portfolio web" data-cat="web">
+        <div class="portfolio-wrapper">     
+          <img src="http://www.emprendimientoweb.cl/wp-content/uploads/2016/10/web-services.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Typography Company</a>
+              <span class="text-category">Business card</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+        </div>
+
+        <div class="portfolio web" data-cat="web">
+        <div class="portfolio-wrapper">     
+          <img src="http://kingofwallpapers.com/icon-wallpaper/icon-wallpaper-005.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Typography Company</a>
+              <span class="text-category">Business card</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+        </div>
+        <div class="portfolio metal" data-cat="metal">
+        <div class="portfolio-wrapper">     
+          <img src="http://kingofwallpapers.com/icon-wallpaper/icon-wallpaper-005.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Typography Company</a>
+              <span class="text-category">Business card</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+        </div>
+
+
+</div>
+</section>
+<style>
+
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: #0073c8 url(img/cd-top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+  z-index: 99999999;
+}
+.no-touch .cd-top:hover {
+  background-color: #e86256;
+  opacity: 1;
+}
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+</style>
+<script>
+  jQuery(document).ready(function($){
+  // browser window scroll (in pixels) after which the "back to top" link is shown
+  var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+  //hide or show the "back to top" link
+  $(window).scroll(function(){
+    ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+    if( $(this).scrollTop() > offset_opacity ) { 
+      $back_to_top.addClass('cd-fade-out');
+    }
+  });
+
+  //smooth scroll to top
+  $back_to_top.on('click', function(event){
+    event.preventDefault();
+    $('body,html').animate({
+      scrollTop: 0 ,
+      }, scroll_top_duration
+    );
+  });
+
+});
+</script>
+<a href="#0" class="cd-top">Top</a>
+<section id="mapio">
+    <div style='overflow:hidden;height:619px;width:100%;'>
+    <div id='gmap_canvas' style='height:619px;width:100%;'></div>
+    <style>
+        #gmap_canvas img {
+            max-width: none!important;
+            background: none!important
+        }
+    </style>
+</div>
+</section>
+</main>
+<!--  <div class="container-fluid">
+        <div class="col-md-8">
+        <div class="col-md-12">
+            <img src="img/logo2.png" class="img-responsive" alt="Logo">
+        </div>
+        <div class="col-md-8">
+
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint vero, quibusdam ut iste ipsum placeat sit earum fugiat consequatur, saepe, quisquam magni quas quod impedit in eius, consequuntur amet maxime!</p>
+        </div>
+       </div>
+            <div class="col-md-4">
+                <div class="col-md-12 pull-right contact-info" style="text-align: center;">
+                    <h1>Contacto</h1>
+                </div>
+                <div class="col-md-12 contact-info-wi">
+                    <p>100 Mainstreet Center, Sydney</p>
+                    <hr>
+                </div>
+
+                
+            </div>
+        
+    </div>-->
+<footer id="contact">
+    <div class="main-footer">
+      <div class="container-main">
+           <h1 class="wow fadeInUp title" data-wow-duration="1s" data-wow-delay="1s" style=" color: #fff;text-align: center;">CONTACTOS</h1>   
+           <hr class="style15 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="1s" >   
+         </div>     
+         <div class="container-large">
+
+                <div class="row contact-me">
+        <div class="col-md-8">
+        <div class="col-md-12 fadeInUp wow animated " style="text-align:left;padding:0;" data-wow-duration="1s" data-wow-delay="1s">
+                    <h2 class="title-form">ENVIA MENSAGEM</h2>  
+        </div>
+            <div class="well well-sm">
+                <form action="{{url('/send')}}" method="post">
+                {{csrf_field()}}
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group animated wow fadeInUp " data-wow-duration="0.8s" data-wow-delay="0.8s">
+                            <label for="name">
+                                Name</label>
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Enter name" required="required" />
+                        </div>
+                        <div class="form-group animated wow fadeInUp " data-wow-duration="1.4s" data-wow-delay="1.4s">
+                            <label for="email">
+                                Email Address</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                </span>
+                                <input type="email" name="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-6">
+                     <div class="form-group animated wow fadeInUp " data-wow-duration="1.8s" data-wow-delay="1.8s">
+                            <label for="name">
+                                 Asunto</label>
+                            <input type="text" class="form-control"  name="asunto"  id="name" placeholder="Enter name" required="required" />
+                        </div>
+                        <div class="form-group animated wow fadeInUp " data-wow-duration="2s" data-wow-delay="2s">
+                            <label for="name">
+                                Message</label>
+                            <textarea name="message" id="message" class="form-control" rows="5" cols="10" required="required"
+                                placeholder="Message"></textarea>
+                        </div>
+
+                    </div>
+                    <div class="col-md-12 animated wow rubberBand" >
+                        <button type="submit" class="btn btn-primary " style="float:left;">
+                            Send Message</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-4 animated wow fadeInRight" data-wow-duration="2.2s" data-wow-delay="2.2s">
+             <div class="col-md-12 " style="text-align:left" >
+                    <h2 class="title-form">informações</h2>  
+                    
+                </div>
+                <div class="col-md-12 contact-info-wi">
+                    <p>100 Mainstreet Center, Sydney</p>
+                    <hr>
+                </div>
+                 <div class="col-md-12 ">
+                    <h3 class="bitacora"><i class="ion-code-working" style="color:#fff;"></i>TIM</h3>
+                    <div class="style14"></div>
+                    <h3 class="bitacora"><i class="ion-printer" style="color:#fff;"></i>Fax:</h3>
+                    <div class="style14"></div>
+                    <h3 class="bitacora"><i class="ion-ios-email" style="color:#fff;"></i>Email:</h3>
+                    <div class="style14"></div>
+                    <h3 class="bitacora"><i class="ion-code-working" style="color:#fff;"></i>WEB:</h3>
+                    <div class="style14"></div>
+                    <h3 class="bitacora"><i class="ion-social-facebook" style="color:#fff;"></i>Faceboox</h3>
+                    <div class="style14"></div>
+ 
+                </div>
+
+                
+        </div>
+    </div>
+
+         </div>  
+    </div>
+
+
+    <div class="sub-footer">
+        <div class="container-fluid">
+            <div class="col-md-4">
+                <h4 class="name-footer">&copy;Copyright 2016 - FVF Milling</h4>
+            </div>
+            <div class="col-md-4">
+                
+            </div>
+            <div class="col-md-4" >
+                <a href="" class="social-icon">
+                    <i class="ion-social-facebook"></i>
+                </a>
+                <a href="" class="social-icon">
+                    <i class="ion-social-twitter"></i>
+                </a>
+                <a href="" class="social-icon">
+                    <i class="ion-social-rss"></i>
+                </a>
+                <a href="" class="social-icon">
+                    <i class="ion-social-googleplus"></i>
+                </a>
+                <a href="" class="social-icon">
+                    <i class="ion-social-skype"></i>
+                </a>
+                <a href="" class="social-icon">
+                    <i class="ion-social-dribbble"></i>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+</footer>
+<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyA3Ijv-QXdzFFiyzTm1Wg8dJrVwVpjEKCs'></script>
+ <a href='http://maps-generator.com/es'>Maps Generator ES</a>
+<script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=e11a98976d90b60f9ea3d5f12ef5be264579e029'></script>
+<script type='text/javascript'>
+    function init_map() {
+        var myOptions = {
+            zoom: 7,
+            center: new google.maps.LatLng(8, -66),
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+             styles: [
+            {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+            {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+            {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+            {
+              featureType: 'administrative.locality',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'poi',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'geometry',
+              stylers: [{color: '#263c3f'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#6b9a76'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry',
+              stylers: [{color: '#38414e'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#212a37'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#9ca5b3'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry',
+              stylers: [{color: '#746855'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#1f2835'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#f3d19c'}]
+            },
+            {
+              featureType: 'transit',
+              elementType: 'geometry',
+              stylers: [{color: '#2f3948'}]
+            },
+            {
+              featureType: 'transit.station',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'geometry',
+              stylers: [{color: '#17263c'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#515c6d'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.stroke',
+              stylers: [{color: '#17263c'}]
+            }
+          ]
+        };
+        map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+        marker = new google.maps.Marker({
+            map: map,
+            position: new google.maps.LatLng(8, -66)
+        });
+        infowindow = new google.maps.InfoWindow({
+            content: '<strong>Venezuela</strong><br><br> <br>'
+        });
+        google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map, marker);
+        });
+        infowindow.open(map, marker);
+    }
+    google.maps.event.addDomListener(window, 'load', init_map);
+</script>
+
+   
+    </body>
+</html>
